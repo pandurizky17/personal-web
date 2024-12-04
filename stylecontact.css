@@ -1,0 +1,37 @@
+.contact-section{
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form {
+  width: 400px;
+  font-family :'Poppins', sans-serif;
+  background-color: aquamarine;
+  border: 4px solid black;
+  border-radius: 9px;
+  padding: 30px 14px;
+}
+
+.form-field {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-input {
+  border-radius: 5px;
+  border: 1px solid hwb(0 18% 79%);
+  padding: 5px;
+}
+
+.form-submit-button{
+  color: wheat;
+  background-color: orangered;
+  border: 1px solid red;
+  border-radius: 9px;
+  padding: 5px 20px;
+}

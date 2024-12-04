@@ -1,0 +1,54 @@
+body{
+  margin:0px;
+}
+/* Home Page Styles */
+nav{
+  background-color: rgb(221, 221, 221);
+  display: flex; /*Menentukan Posisi Item di dalam Nav Bar*/
+  justify-content: space-between; /*untuk komponen yang dikiri dan kanan*/
+  align-items: center;
+  padding: 0px 40px;
+}
+
+nav a{
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.navbar-left{
+  display: flex;
+  align-items:center; /*untuk item vertikal*/
+}
+
+.navbar-links{
+  display: flex;
+  gap: 30px;
+  list-style: none; /*menghilanglan titik point list*/
+}
+
+.web-logo{
+  width: 80px;
+}
+
+.contact-link{
+   color: wheat;
+  background-color: orangered;
+  border: 1px solid red;
+  border-radius: 9px;
+  padding: 5px 20px;
+}
+
+.link-active{
+  color: orangered;
+  font-weight: bold;
+}
+
+.link{
+  color: black;
+}
+
+.slipknot-form{
+  justify-content: center;
+  border-radius: 5px;
+}
+/*Contact Me Style*/
