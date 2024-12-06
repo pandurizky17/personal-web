@@ -30,9 +30,4 @@ function renderBlog() {
 
   let blogListElement = document.getElementById("blogList");
   blogListElement.innerHTML = firstBlogContent();
-
-  for {}
-
 }
-
-
