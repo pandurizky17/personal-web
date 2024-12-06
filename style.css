@@ -1,8 +1,14 @@
-body{
-  margin:0px;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0px;
 }
 /* Home Page Styles */
-nav{
+nav {
   background-color: rgb(221, 221, 221);
   display: flex; /*Menentukan Posisi Item di dalam Nav Bar*/
   justify-content: space-between; /*untuk komponen yang dikiri dan kanan*/
@@ -10,45 +16,355 @@ nav{
   padding: 0px 40px;
 }
 
-nav a{
+nav a {
   font-size: 20px;
   text-decoration: none;
 }
 
-.navbar-left{
+.navbar-left {
   display: flex;
-  align-items:center; /*untuk item vertikal*/
+  align-items: center; /*untuk item vertikal*/
 }
 
-.navbar-links{
+.navbar-links {
   display: flex;
   gap: 30px;
   list-style: none; /*menghilanglan titik point list*/
 }
 
-.web-logo{
+.web-logo {
   width: 80px;
 }
 
-.contact-link{
-   color: wheat;
-  background-color: orangered;
-  border: 1px solid red;
-  border-radius: 9px;
+.contact-link {
+  color: rgb(223, 223, 223);
+  background-color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  font-weight: bold;
+  border-radius: 17px;
   padding: 5px 20px;
 }
+.contact-link:hover {
+  color: rgb(0, 0, 0);
+  background-color: orangered;
+  border: 1px solid orangered;
+  font-weight: bold;
+}
 
-.link-active{
+.link-active {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.link-active:hover {
   color: orangered;
   font-weight: bold;
 }
 
-.link{
+.link {
   color: black;
 }
 
-.slipknot-form{
+/*Left Content*/
+
+.background-content {
+  background-color: antiquewhite;
+  background-attachment: fixed;
+}
+
+.title-section {
+  width: 45%;
+}
+.left-content {
+  width: 1000px;
+  height: fit-content;
+  margin: auto;
+  margin-top: 7%;
+}
+
+.left-right {
+  margin: auto;
+  overflow: -moz-hidden-unscrollable;
+}
+
+.left-section {
+  height: 500px;
+  text-align: justify;
+  width: 400px;
+  margin-right: 3%;
+  float: left;
+}
+
+.right-section {
+  background-color: cadetblue;
+  max-height: fit-content;
+  height: 360px;
+  width: 288px;
+  margin-right: 15%;
+  float: right;
+}
+
+.name-section {
+  text-align: center;
+}
+
+/*Right Content*/
+
+.container {
+  width: 100%;
+  display: flex;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  width: fit-content;
+}
+
+.sidebar {
+  width: 20%;
+  padding: 15px;
+}
+
+.content {
+  width: 60%;
+  padding: 15px;
+}
+
+/*Tombol Contact*/
+.left-bottom {
+  align-items: center;
+}
+
+.form-submit-button {
+  background-color: orangered;
+  color: white;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  border-radius: 9px;
+  margin-top: 40%;
+}
+.form-submit-button:hover {
+  background-color: rgb(0, 0, 0);
+  border: 1px solid black;
+  font-family: "Poppins", sans-serif;
+  color: rgb(255, 255, 255);
+  transition: background-color 0.3s ease;
+}
+
+.form-submit-button:link {
+  text-decoration: none;
+}
+
+/*Tombol Download CV*/
+.form-download {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  text-decoration: none;
+  margin-top: 23%;
+  margin-left: 20%;
+  white-space: nowrap;
+}
+
+.form-download:hover {
+  color: orangered;
+}
+
+.form-icon {
+  color: white;
+  width: 15px;
+  height: 15px;
+  margin-bottom: 3px;
+  margin-left: 5%;
+}
+
+/*Contact Me Style*/
+.contact-section {
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.contact-form {
+  width: 400px;
+  font-family: "Poppins", sans-serif;
+  background-color: aquamarine;
+  border: 4px solid black;
+  border-radius: 9px;
+  padding: 30px 14px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  font-weight: bold;
+  gap: 10px;
+}
+
+.form-input {
+  border-radius: 5px;
+  border: 1px solid #cacaca;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.form-submit-button {
+  color: wheat;
+  background-color: orangered;
+  border: 1px solid orangered;
+  border-radius: 9px;
+  padding: 5px 20px;
+}
+
+/*Icon Social Media*/
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: relative;
+  display: flex;
+  border-radius: 40px;
+  margin-top: 10%;
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 25px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: orangered;
+}
+
+.linkedin {
+  color: rgb(0, 0, 0);
+}
+
+.instagram {
+  color: white;
+}
+
+.facebook {
+  color: white;
+}
+
+.twitter {
+  color: white;
+}
+
+/* Blog Page Style */
+
+.section-title {
+}
+.blog-form {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.form-container {
+  width: 500px;
+  background-color: rgb(255, 255, 255);
+}
+
+.form-label {
+  font-size: 18px;
+}
+
+.input-blog-image-group {
+  background-color: gainsboro;
+  width: 100%;
+  height: 40px;
+  font-size: 15px;
+  padding: 0 8px;
+  box-sizing: border-box;
+  border: 1px solid #c4c4c4;
   border-radius: 5px;
 }
-/*Contact Me Style*/
+
+.input-blog-image-group label img {
+  width: 20px;
+}
+
+.input-blog-image-group label {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.form-container button {
+  margin-top: 30px;
+  padding: 8px 20px;
+  color: white;
+  background-color: orangered;
+  border: none;
+  border-radius: 8px;
+}
+
+.button-group {
+  text-align: right;
+}
+
+hr {
+  width: 80%;
+}
+
+/* Blog List */
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+}
+
+.blog list {
+  width: 70px;
+}
+
+.blog-list-item {
+  display: flex;
+  gap: 20px;
+  border: 2px solid #c4c4c4;
+  padding: 20px;
+}
+
+.blog-image img {
+  height: 100%;
+  width: 400px;
+}
+
+.btn-group {
+  text-align: right;
+}
+
+.btn-edit {
+  margin-top: 30px;
+  padding: 8px 20px;
+  background-color: rgb(99, 99, 99);
+  border: none;
+  border-radius: 8px;
+}
+.btn-post {
+  margin-top: 30px;
+  padding: 8px 20px;
+  background-color: rgb(110, 0, 0);
+  border: none;
+  border-radius: 8px;
+}
+
+.blog-text {
+  margin: 0;
+}
+
+.blog-item-title {
+  text-decoration: none;
+}
